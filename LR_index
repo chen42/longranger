@@ -1,0 +1,6 @@
+#$ -S /bin/bash
+#
+#
+export PATH=/home/haochen/longranger-2.1.3:/home/haochen/loupe-2.1.1:$PATH
+
+longranger mkref /mnt/sdb2/users/haochen/ratRefGenome/rn6_condensed.fa
