@@ -23,7 +23,7 @@
 #
 #$ -N __MRO_JOB_NAME__
 #$ -V
-#$ -pe orte __MRO_THREADS__
+#$ -pe make __MRO_THREADS__
 #$ -l mem_free=__MRO_MEM_GB__G
 #$ -cwd
 #$ -o __MRO_STDOUT__
