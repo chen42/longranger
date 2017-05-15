@@ -11,7 +11,10 @@ while (<R>) {
 		if ($out=~/(.+?)_/) {
 			print ">>chr$1\_random\n";
 			open (O, ">>chr$1\_random") || die;
-			print O "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN\n";
+			#print # > 500 N according to 10x genomics
+			for ($i=0; $i<=10; $i++) {
+				print O "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN\n";
+			}
 			next;
 		} else {
 			print ">>chr$out\n";
